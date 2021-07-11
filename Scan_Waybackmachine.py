@@ -95,7 +95,7 @@ def get_waybackmachine_pages(channel):
                 day_str = "0"+day_str
             current_date = current_date[0:6] + str(day_str)
         #print("new current scan date",current_date)
-        time.sleep(0.2)
+        time.sleep(0.75)
     return valid_pages
 
 
@@ -214,7 +214,7 @@ def download_youtube_pages(url_int,urls):
         #print(soup)
         if '"isUnlisted":true' in str(soup):
             #print("Unlisted video here!")
-            
+            time.sleep(.75)
             relevant_data = str(soup).split("""[{"@type": "ListItem", "position": 1, "item":""")[1].split("""}}]}</script>""")[0]
             Channel_URL = relevant_data.split(": \"")[1].split("\", \"name\"")[0].replace("\\","")
             Channel_Name = relevant_data.split("name\": \"")[1].replace("\"","")
