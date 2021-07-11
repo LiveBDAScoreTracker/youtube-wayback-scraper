@@ -7,5 +7,5 @@ Run the script and you'll discover the file "output_url_results.txt" containing 
 
 Test the script first with one channel you know has unlisted videos documented on the waybackmachine, or test with the example "youtube-dl-channels.txt" and "youtube-dl-archive.txt" provided.
 
-
-This code was quickly written with no regard as to any formating. I'm glad I'm not a computer science student, otherwise this would be inexcuseable.
+***
+This code was quickly written with no regard as to any formating. It is likely filled with bugs. I'm glad I'm not a computer science student, otherwise this would be inexcuseable.
